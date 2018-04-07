@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<body background="clouds.jpg">
+<img src="https://www.timeshighereducation.com/sites/default/files/styles/the_breaking_news_image_style/public/female-engineer-measuring-voltage-on-conductor-board.jpg?itok=z9334cTz">
+<h2>Background Image</h2>
+<p><a href="https://www.w3schools.com">Visit W3Schools.com!</a></p>
+<head>
+      <title>change picture</title>
+      <script type = "text/javascript">
+          function displayNextImage() {
+              x = (x === images.length - 1) ? 0 : x + 1;
+              document.getElementById("img").src = images[x];
+          }
+          function displayPreviousImage() {
+              x = (x <= 0) ? images.length - 1 : x - 1;
+              document.getElementById("img").src = images[x];
+          }
+
+          function startTimer() {
+              setInterval(displayNextImage, 3000);
+          }
+
+          var images = [], x = -1;
+          images[0] = "clouds.jpg";
+          images[1] = "kmm.jpg";
+          images[2] = "image3.jpg";
+      </script>
+   </head>
+
+   <body onload = "startTimer()">
+       <img id="img" src="startpicture.jpg"/>
+       <button type="button" onclick="displayPreviousImage()">Previous</button>
+       <button type="button" onclick="displayNextImage()">Next</button>
+
+</body>
+</html>
