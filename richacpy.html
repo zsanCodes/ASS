@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"
+   charset="utf-8"></script>;
+  <title>ASK A STEM SISTER</title>
+
+  <link rel="stylesheet" type="text/css" href="BOOTY.css" >
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+header, footer{
+  padding: 1em;
+    color: white;
+    font-size: 50px;
+    background-image: url("http://www.baltana.com/files/wallpapers-8/Geometric-Shape-Design-HD-Desktop-Wallpaper-24824.jpg");
+    clear: left;
+    text-align: center;
+}
+h1
+{
+  font-weight: lighter;
+  font-family: Avenir;
+}
+h2{
+  font-family: Avenir;
+  font-weight: lighter;
+  font-size: 25px;
+}
+p{
+  font-family: Avenir;
+}
+  nav {
+    box-sizing: border-box;
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+  nav ul a {
+    text-decoration: none;
+}
+  explorepage1 {
+    box-sizing: border-box;
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden
+  }
+  explorepage2 {
+    box-sizing: border-box;
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden
+  }
+  localnews {
+    box-sizing: border-box;
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden
+  }
+   {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden
+  }
+  .headimage{
+   width: 80%;
+     height: 100%;
+     position: absolute;
+     /* top: 0; */
+     left: 5%;
+     z-index: -900;
+     margin: auto;
+}
+</style>
+</head>
+<body>
+
+  <div class="topnav">
+    <a class="active" href="#home">HOME</a>
+
+    <div class="dropdown">
+      <button class="dropbtn">UNIVERSITIES
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+    <a href="#companies">COMPANIES</a>
+    <div class="dropdown">
+      <button class="dropbtn">EVENTS
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+    <a href="#resources">RESOURCES</a>
+    <div class="dropdown">
+      <button class="dropbtn">ABOUT US
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+
+  </div>
+
+<header>
+  <h1>ASK A STEM SISTER</h1>
+<p><a href="#"></a></p>
+<image class="headimage" id='image' src="Geometric-Shape-Design-HD-Desktop-Wallpaper-24824.jpg"></image>
+</header>
+
+<nav>
+  <h2>Companies</h2>
+  <ul>
+    <li><a href="#">IBM</a></li>
+    <li><a href="#">GE</a></li>
+    <li><a href="#">Burn's & McDonnell</a></li>
+    <li><a href="#">Raytheon</a></li>
+    <li><a href="#">Leidos</a></li>
+    <li><a href="#">Oracle</a></li>
+    <li><a href="#">IBM</a></li>
+    <li><a href="#">GE</a></li>
+    <li><a href="#">Burn's & McDonnell</a></li><li><a href="#">IBM</a></li>
+    <li><a href="#">GE</a></li>
+    <li><a href="#">Burn's & McDonnell</a></li><li><a href="#">IBM</a></li>
+    <li><a href="#">GE</a></li>
+    <li><a href="#">Burn's & McDonnell</a></li>
+  </ul>
+</nav>
+
+
+<h2 class="explorepage1">Explore by field of interest</h2>
+<p>Connect with STEM sisters and resources in your field.</p>
+<a href ="url"> Click Here </a>
+
+<h2 class="explorepage2">Explore by location</h2>
+<p>Search for jobs, schools and events in your area.</p>
+<a href="url"> Click Here. </a>
+
+<h2 class="localnews">Local News</h2>
+<h4 class="localnews">Discover Jobs Near You
+  <li><a href="mockcompany.html">Manufacturing Engineer, John Deere </a></li>
+</h4>
+
+</body>
+</html>
+<script>
+setInterval(imageLoop, 5000);
+
+var images = ['Geometric-Shape-Design-HD-Desktop-Wallpaper-24824.jpg', 'scientistgirl.jpg', 'unnamed.jpg', 'workingscientist.jpg']
+
+var i = 0;
+
+function imageLoop(){
+        $("#image").fadeOut(500, function() {
+           $(this).attr("src", images[i%images.length]);
+           $(this).load(function () {
+                 $(this).fadeIn(500);
+           });
+         });
+         i++;
+}
+</script>
