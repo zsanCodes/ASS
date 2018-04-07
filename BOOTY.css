@@ -40,7 +40,7 @@
 }
 
 .topnav a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
+    background-color: #a379c6;
 }
 .topnav a.active:hover {
     background-color: blue;
