@@ -6,12 +6,49 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+
 header, footer{
   padding: 1em;
     color: white;
-    background-color: black;
+    font-size: 50px;
+    background-image: url("http://www.baltana.com/files/wallpapers-8/Geometric-Shape-Design-HD-Desktop-Wallpaper-24824.jpg");
     clear: left;
     text-align: center;
+}
+h1
+{
+  font-weight: lighter;
+  font-family: Avenir;
+}
+h2{
+  font-family: Avenir;
+  font-weight: lighter;
+  font-size: 25px;
+}
+p{
+  font-family: Avenir;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-container>div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding:20px 0;
+  font-size: 15px;
+}
+.item1 {
+  grid-area: 1 / 1 / span 1 / span 1;
+}
+.item2 {
+  grid-area: 1 / 2 / span 1/ span 1;
+}
+.item3 {
+  grid-area: 1 / 2/ span 2/ span 1;
 }
 
   nav {
@@ -31,22 +68,6 @@ header, footer{
     text-decoration: none;
 }
 
-  explorepage1 {
-    box-sizing: border-box;
-    margin-left: 170px;
-    border-left: 1px solid gray;
-    padding: 1em;
-    overflow: hidden
-  }
-
-  explorepage2 {
-    box-sizing: border-box;
-    margin-left: 170px;
-    border-left: 1px solid gray;
-    padding: 1em;
-    overflow: hidden
-  }
-
   localnews {
     box-sizing: border-box;
     margin-left: 170px;
@@ -54,13 +75,27 @@ header, footer{
     padding: 1em;
     overflow: hidden
   }
-   {
+   globalnews {
+    box-sizing: border-box;
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    border: 1px solid red;
+    padding: 35px 70px 50px;
+  }
+  explorepage1 {
+    box-sizing: border-box;
     margin-left: 170px;
     border-left: 1px solid gray;
     padding: 1em;
     overflow: hidden
   }
-
+  explorepage2 {
+    box-sizing: border-box;
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden
+  }
 </style>
 </head>
 <body>
@@ -111,36 +146,78 @@ header, footer{
 <nav>
   <h2>Companies</h2>
   <ul>
+    <li><a href="#">Adobe</a></li>
+    <li><a href="#">Apple</a></li><li>
+    <li><a href="#">Burn's & McDonnell</a></li>
     <li><a href="#">IBM</a></li>
     <li><a href="#">GE</a></li>
-    <li><a href="#">Burn's & McDonnell</a></li>
     <li><a href="#">Raytheon</a></li>
     <li><a href="#">Leidos</a></li>
     <li><a href="#">Oracle</a></li>
-    <li><a href="#">IBM</a></li>
-    <li><a href="#">GE</a></li>
-    <li><a href="#">Burn's & McDonnell</a></li><li><a href="#">IBM</a></li>
-    <li><a href="#">GE</a></li>
-    <li><a href="#">Burn's & McDonnell</a></li><li><a href="#">IBM</a></li>
-    <li><a href="#">GE</a></li>
+    <li><a href="#">Cisco</a></li>
+    <li><a href="#">Workday</a></li>
+    <li><a href="#">Dell Technologies</a></li>
+    <li><a href="#">Tesla</a></li>
     <li><a href="#">Burn's & McDonnell</a></li>
+    <li><a href="#">Uber</a></li>
+    <li><a href="#">Dell Technologies</a></li>
+    <li><a href="#">Tesla</a></li>
+    <li><a href="#">Salesforce</a></li>
   </ul>
 </nav>
 
+<div class="grid-container">
+  <div class="item1">
+    <h2 class="localnews">Local News: Chicago, IL</h2>
+    <h4 class="localnews">Recent Job Listings
+      <li><a href="mockcompany.html">Manufacturing Engineer, John Deere; posted April 05, 2018 </a></li>
+      <li><a href="mockcompany.html">Computer Technichian, Woodruff Construction; posted April 05, 2018 </a></li>
+      <li><a href="mockcompany.html">Manufacturing Engineer, John Deere; posted April 05, 2018 </a></li>
+    </h4>
+    <h4 class="localnews">Upcoming Events
+      <li><a href="mockcompany.html">Engineering Career Fair 2018, McCormick Center; May 5th, 2018  </a></li>
+    </h4>
+    <h4 class="localnews">Trending Forums
+    <p>
+      <li><a href="#">Innovative employers in Chicago</a></li>
+      <li><a href="#">Most Innovative Work Environments of 2018</a></li>
+      <li><a href="#">Chemical Engineering: need help safety constraints</a></li>
+      <li><a href="#">Local women buisness owners</a></li>
+      </h4>
+    </p>
+    <h2 class="globalnews">Global News</h2>
+    <h4 class="globalnews">Trending Forums
+      <li><a href="#">Women CEOs</a></li>
+      <li><a href="#">How to deal with a difficult boss</a></li>
+      <li><a href="#">Women Bosses</a></li>
+    </h4>
+    <h4 class="globalnews">Events
+      <li><a href="#">Event A</a></li>
+      <li><a href="#">Event B</a></li>
+      <li><a href="#">Event C</a></li>
+    </h4>
+  </div>
 
-<h2 class="explorepage1">Explore by field of interest</h2>
-<p>London is the capital of England.</p>
+<div class="grid container">
+  <div class="item3">
+    <h2 class="explorepage2">Explore by location</h2>
+    <h4>
+      <li><a href="#">Update current location</a></li>
+      <li><a href="#">Add a location to your profile</a></li>
+      <li><a href="#">Browse other locations</a></li>
 
-<h2 class="explorepage2">Explore by location</h2>
-<p>Paris is the capital of France.</p>
+    </h4>
+    <h2 class="explorepage1">Explore by field of interest</h2>
+    <h4>
+      <li><a href="#">Science</a></li>
+      <li><a href="#">Technology</a></li>
+      <li><a href="#">Engineering</a></li>
+      <li><a href="#">Math</a></li>
+    </h4>
 
-<h2 class="explorepage3">Explore by </h2>
-<p>Tokyo is the capital of Japan.</p>
-
-<h2 class="localnews">Local News</h2>
-<h4 class="localnews">Discover Jobs Near You
-  <li><a href="mockcompany.html">Manufacturing Engineer, John Deere </a></li>
-</h4>
+    <p>Don't see the company you're looking for listed?
+      <li><a href="#">Request to add a company</a></li>
+    </p>
 
 </body>
 </html>
